@@ -14,7 +14,7 @@ def isLetter (char):
 def wordsOfString(stringToParse):
     wrdArry = [];
     lastBorder = 0;
-    stringToParse = stringToParse + " ";
+    stringToParse += " ";
     for ct in range(1, len(stringToParse)):
         if isLetter(stringToParse[ct]) and not isLetter(stringToParse[ct-1]):
             lastBorder = ct;
