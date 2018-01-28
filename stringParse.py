@@ -10,7 +10,7 @@ def isLetter (char):
         return True;
     return False;
 
-# === returns a string array of
+# ==== returns a string array of
 def wordsOfString(stringToParse):
     wrdArry = [];
     lastBorder = 0;
@@ -22,10 +22,3 @@ def wordsOfString(stringToParse):
             if isLetter(stringToParse[ct]) and not isLetter(stringToParse[ct+1]):
                 wrdArry.append(stringToParse[lastBorder:ct+1]);
     return wrdArry;
-
-# ================Main Program
-testString = "This is my big,: old a !test string.";
-
-myArray = wordsOfString(testString);
-for wrd in myArray:
-    print wrd;
